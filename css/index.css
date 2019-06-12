@@ -78,7 +78,7 @@ nav{
 	z-index: 1;
 }
 .navLinks{
-	margin-right: 40px;
+	margin-right: 30px;
 	font-size: 14px;
 	color: lightgrey;
 	text-decoration: none;
@@ -221,4 +221,47 @@ h1{
 }
 p{
 	font-style: strong;
+}
+@media(max-width: 600px){
+
+	.container{
+		width: 100%;
+	}
+	.moveTop{
+		flex-direction: column !important;
+		height: 50%;
+		margin-right: 0% !important;
+		align-content: center;
+	}
+	nav a{
+		width: 100%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-size: 56px;
+		border-bottom: solid lightgray 1px;
+	}
+	.textMarginTopBot{
+		display: unset;
+	}
+	.features{
+		width: 100%;
+	}
+	.About{
+		width: 100%;
+	}
+	.widthForBottomBoxes{
+		width: 100%;
+		margin-top: 2%;
+		margin-bottom: 4%;
+	}
+	.navLinks{
+		margin-right: 0%;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		margin: 0 0 0 0;
+		font-size: 22px;
+	}
+
+
+
 }

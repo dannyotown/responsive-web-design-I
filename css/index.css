@@ -165,7 +165,7 @@ h1{
     justify-content: center;
 }
 
-@media(max-width: 975px)
+@media(max-width: 900px)
 {
     #logoNav{
         order: 1;
@@ -222,7 +222,7 @@ h1{
 p{
 	font-style: strong;
 }
-@media(max-width: 600px){
+@media(max-width: 500px){
 
 	.container{
 		width: 100%;

@@ -1,3 +1,270 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.container{
+	margin: auto;
+	width: 60%;
+}
+nav{
+	margin-bottom: 15px;	
+	height:50px;
+	text-align: center;
+	z-index: 1;
+}
+.navLinks{
+	margin-right: 6%;
+	font-size: 14px;
+	color: lightgrey;
+	text-decoration: none;
+}
+.logo{
+	vertical-align: middle;
+	height:100px;
+	width: 50px;
+}
+#logoNav{
+	margin-left: 6%;
+}
+.About{
+	width:48%;
+	margin-bottom:15px;
+}
+.features{
+	width:48%;
+	margin-bottom:15px;
+	margin-right:4%;
+}
+.hrClass{
+	border-top: 1px solid black;
+	margin: 10 0 10 0;
+}
+.textAndImage{
+	display: flex;
+	text-align: center;
+	height:400px;
+}
+.codeSnip{
+	width:49%;
+	vertical-align:middle;
+}
+.buttonText{
+	font-size: 33px;
+	width:49%;
+	vertical-align:middle;
+}
+h1{
+	font-size:76px;
+}
+.marginBottomTopPicture{
+	margin: 50px 0px 50px 0px;
+}
+.getStarted{
+	background: white;
+	font-size: 16px;
+	padding: 8px 40px 8px 40px;
+	border: grey solid 1.5px;
+}
+.widthForBottomBoxes {
+	width: 33%;
+	margin-right:15px;
+}
+.textMarginTopBot{
+	display:flex;
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+.middle-img{
+	width:100%;
+}
+.logo{
+	width:175px;
+	height: 35px;
+}
+
+.imageResize{
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+	transition:         transform .8s ease-in-out;
+}
+.imageResize:hover{
+	-webkit-transform: rotate(360deg);
+			transform: rotate(360deg);
+}
+.moveTop{
+    margin-top:25px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.textAndImage{
+    justify-content: center;
+}
+
+@media(max-width: 900px)
+{
+    #logoNav{
+        order: 1;
+        margin: 1% 100% 6% 100%;
+    }
+    .moveTop{
+		height: 10%;
+		flex-wrap: wrap;
+    }
+    #servicesNav{
+        order:2;
+    }
+    #productNav{
+        order: 3;
+    }
+    #visionNav{
+        order: 4;
+    }
+    #featuresNav{
+        order: 5;
+    }
+    #aboutNav{
+        order: 6;
+    }
+    #contactNav{
+        order: 7;
+    }
+    .imageResize{
+        display:none;
+    }
+    .navLinks{
+        margin-right:10%;
+    }
+    .textAndImage{
+        height: 10%;
+        width: 95%;
+        display: block;
+    }
+    .buttonText{
+        text-align: center;
+        width:unset;
+    }
+    .container{
+        width: 95%;
+    }
+    .codeSnip{
+        width: 0;
+    }
+}
+.copyRight{
+	text-align: center;
+	font-size: 14px;
+	margin: 75px 0px 75px 0px;
+}
+p{
+	font-style: strong;
+}
+@media(max-width: 500px){
+
+	.container{
+		width: 95%;
+	}
+	.moveTop{
+		flex-direction: column;
+		height: 50%;
+		margin-right: 0% ;
+		align-content: center;
+	}
+	nav a{
+		width: 100%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-size: 56px;
+		border-bottom: solid lightgray 1px;
+	}
+	.textMarginTopBot{
+		display: unset;
+	}
+	.features{
+		width: 100%;
+	}
+	.About{
+		width: 100%;
+	}
+	.widthForBottomBoxes{
+		width: 100%;
+		margin-top: 2%;
+		margin-bottom: 4%;
+	}
+	.navLinks{
+		margin-right: 0%;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		margin: 0 0 0 0;
+		font-size: 22px;
+	}
+
+
+
+}
